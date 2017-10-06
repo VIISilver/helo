@@ -1,10 +1,18 @@
 .Dashboard-page {
     height: 500px;
     width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #f2f2f2;
+}
+.upper {
+    display: flex;
+    justify-content: space-around;
+
+
 }
 .profile-container {
     height: 300px;
@@ -17,9 +25,15 @@
     box-shadow: 0 14px 28px 0 
 }
 
+.btn {
+    height: 25px;
+    width: 60px;
+}
+
 .welcome-text {
     height: 100px;
     width: 355px;
+    border: 1px black;
     background-color: white;
     color: black;
 }
