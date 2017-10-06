@@ -1,0 +1,20 @@
+INSERT INTO users 
+(first_name, 
+last_name, 
+gender, 
+haircolor, 
+eye_color,
+hobby, 
+bday_day, 
+bday_month, 
+bday_year)
+VALUES
+($1,
+$2,
+$3,
+$4,
+$5,
+$6,
+$7,
+$8,
+$9);

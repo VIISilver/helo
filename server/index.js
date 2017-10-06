@@ -38,7 +38,7 @@ passport.use(new Auth0Strategy({
             return done(null, user[0].id)
         } else {
             const user = profile._json;
-            db.create_user([user.name, user.email, user.picture, user.identities[0].user_id])
+            db.create_user([user.name, user.email, user.picture, user.identities[0].user_id ])
                 .then(user => {
                     done(null, user[0].id)
                 })
@@ -48,7 +48,7 @@ passport.use(new Auth0Strategy({
 
 app.get('/auth', passport.authenticate('auth0'));
 app.get('/auth/callback', passport.authenticate('auth0', {
-    successRedirect: 'http://localhost:3000/#/private',
+    successRedirect: 'http://localhost:3000/#/dashboard',
     failureRedirect: '/auth'
 }))
 
