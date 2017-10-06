@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Dashboard.css';
 import axios from 'axios';
 import { connect } from 'react-redux';
+import {getUserInfo } from './../../ducks/users';
 
 
 class Dashboard extends Component {
@@ -9,23 +10,26 @@ class Dashboard extends Component {
         super(props);
 
         this.state = {
+            userInfo: {}
 
         }
     }
 
     componentDidMount() {
+        this.props.userInfo()
 
     }
 
     render() {
         return (
+            
             <div className='Dashboard-page'>
                 <div className='profile-container'>
                     
-                    <button>Edit Profile</button>
+                    <button className="btn">Edit Profile</button>
                 </div>
                 <div className='welcome-text'>
-                    <p>Welcome to Helo! Find recommended friends based on your similarities, and even search for them by name. The more you update your profile, the better recommendations we can make!</p>
+                    <h4>Welcome to Helo! Find recommended friends based on your similarities, and even search for them by name. The more you update your profile, the better recommendations we can make!</h4>
                 </div>
                 <div className='friend-container'>
                     <h2>Recommended Friends</h2>
@@ -42,13 +46,11 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+function mapStateToProps(state) {
+    console.log("State from dashboard", state)
+    return {
+        user: state.user
+    }
+}
 
-// function mapStateToProps(state) {
-//     console.log("State from private", state)
-//     return {
-//         user: state.user
-//     }
-// }
-
-// export default connect(mapStateToProps, { getUserInfo })(Private);
+export default connect(mapStateToProps, { getUserInfo })(Dashboard);

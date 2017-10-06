@@ -1,23 +1,35 @@
 .Dashboard-page {
+    height: 500px;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    background-color: #f2f2f2;
 }
 .profile-container {
-    height: 30px;
-    width: 50px;
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
     background-color: white;
+    border-radius: 8px;
+    background-image: linear-gradient(128deg, rgba(64, 61, 57, 0.1), rgba(255, 255, 255, 0.2));
+    box-shadow: 0 14px 28px 0 
 }
 
 .welcome-text {
-    height: 30px;
-    width: 100px;
+    height: 100px;
+    width: 355px;
     background-color: white;
+    color: black;
 }
 
 .friend-container {
-    height: 150px;
-    width: 100px;
-    background-color: white;
+    display: flex;
+    align-content: center;
+
+    align-items: center;
+    height: 45%;
+    width: 80%;
+    background-color: black;
 }
