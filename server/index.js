@@ -58,6 +58,11 @@ app.get('/auth/me', (req, res) => {
     }
     return res.status(200).send(req.user)
 })
+app.get('/auth/logout', (req, res) => {
+    req.logOut();
+    res.redirect(302, 'http://localhost:3000/#/')
+
+})
 
 
 passport.serializeUser( function( id, done ){

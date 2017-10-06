@@ -6,6 +6,7 @@ import {getUserInfo } from './../../ducks/users';
 import Header from '../Header/Header';
 
 
+
 class Dashboard extends Component {
     constructor(props) {
         super(props);
@@ -28,7 +29,7 @@ class Dashboard extends Component {
                 <Header />
                 <div className='upper'>
                 <div className='profile-container'>
-                <button className="btn">Edit Profile</button>
+                <a href='http://localhost:3000/#/profile'><button className="btn">Edit Profile</button></a>
                 </div>
                 <div className='welcome-text'>
                     Welcome to Helo! Find recommended friends based on your similarities, and even search for them by name. The more you update your profile, the better recommendations we can make!

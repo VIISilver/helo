@@ -7,7 +7,7 @@ export default class Header extends Component {
             <div className='Header'>
                 <h2><b>Helo</b></h2>
                 <h3>Dashboard</h3>
-                <button className="logout">Logout</button>
+                <a href='http://localhost:3005/auth/logout'> <button className="logout">Logout</button></a>
                 </div>
 
         )
