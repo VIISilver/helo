@@ -1,7 +1,19 @@
 .Header {
-    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    height: 50px;
     width: 100%;
     background-image: linear-gradient(99deg, #ff70a6, #ff9770 40%, #ffd670 73%, #e9ff70);
+    box-shadow: 0 14px 28px 0 rgba(0,0,0,.25), 0 10px 10px 0 rgba(0,0,0,.26);
+    color: white;
     
     
+    
+}
+
+.logout {
+    opacity: .3;
+    background-color: #e9ff70
 }

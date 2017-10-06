@@ -6,6 +6,7 @@ import Login from './components/Login/Login';
 import Dashboard from './components/Dashboard/Dashboard';
 import Profile from './components/Profile/Profile';
 import Search from './components/Search/Search';
+import Header from './components/Header/Header';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
         <Route component = { Dashboard } path = '/dashboard'/>
         <Route component = { Profile } path = '/profile'/>
         <Route component = { Search } path = '/search'/>
+        <Route component = { Header } path = '/dashboard'/>
 
       </div>
       </HashRouter>

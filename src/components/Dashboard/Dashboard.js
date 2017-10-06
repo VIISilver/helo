@@ -3,6 +3,7 @@ import './Dashboard.css';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import {getUserInfo } from './../../ducks/users';
+import Header from '../Header/Header';
 
 
 class Dashboard extends Component {
@@ -24,19 +25,21 @@ class Dashboard extends Component {
         return (
             
             <div className='Dashboard-page'>
+                <Header />
                 <div className='upper'>
                 <div className='profile-container'>
                 <button className="btn">Edit Profile</button>
                 </div>
                 <div className='welcome-text'>
-                    <p>Welcome to Helo! Find recommended friends based on your similarities, and even search for them by name. The more you update your profile, the better recommendations we can make!</p>
-                </div>
+                    Welcome to Helo! Find recommended friends based on your similarities, and even search for them by name. The more you update your profile, the better recommendations we can make!
                     </div>
-                
+                    </div>
+                <div className="lower">
                 <div className='friend-container'>
                     <h2>Recommended Friends</h2>
                     <h4>Sorted by</h4>
                     <button>dropdown</button>
+                    </div>
                 </div>
 
 

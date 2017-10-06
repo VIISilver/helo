@@ -7,7 +7,7 @@ export default class Header extends Component {
             <div className='Header'>
                 <h2><b>Helo</b></h2>
                 <h3>Dashboard</h3>
-                <button>Logout</button>
+                <button className="logout">Logout</button>
                 </div>
 
         )
