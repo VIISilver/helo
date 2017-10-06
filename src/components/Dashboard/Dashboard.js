@@ -21,7 +21,7 @@ class Dashboard extends Component {
         return (
             <div className='Dashboard-page'>
                 <div className='profile-container'>
-                    <img src={logo} alt="" />
+                    
                     <button>Edit Profile</button>
                 </div>
                 <div className='welcome-text'>
@@ -41,6 +41,8 @@ class Dashboard extends Component {
         )
     }
 }
+
+export default Dashboard;
 
 // function mapStateToProps(state) {
 //     console.log("State from private", state)
