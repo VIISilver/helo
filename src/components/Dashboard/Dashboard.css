@@ -1,0 +1,23 @@
+.Dashboard-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-container {
+    height: 30px;
+    width: 50px;
+    background-color: white;
+}
+
+.welcome-text {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+}
+
+.friend-container {
+    height: 150px;
+    width: 100px;
+    background-color: white;
+}
